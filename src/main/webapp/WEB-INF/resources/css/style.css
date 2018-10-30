@@ -1,0 +1,5 @@
+body{
+   background-image:url('http://www.lendr.com.ph/wp-content/uploads/2016/07/iStock_86602055_MEDIUM.jpg');/*your background image*/  
+   background-size: cover;	
+   background-attachment: fixed;
+}

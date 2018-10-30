@@ -1,0 +1,140 @@
+.fm-wrap {
+	 color: #6c7584;
+}
+
+.fm-label-wrap {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: default;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.fm-label-wrap,
+.fm-dropdown {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.fm-label-wrap .fm-label {
+    padding: 6px 22px 6px 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.fm-arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    bottom: 0;
+    margin: auto;
+}
+
+.fm-dropdown {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 150px;
+    margin-top: 5px;
+    z-index: 1000;
+}
+
+.fm-dropdown .fm-options {
+    max-height: 200px;
+    overflow: auto;
+}
+
+.fm-search input {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none;
+    padding: 6px 0;
+    width: 100%;
+}
+
+.fm-option,
+.fm-search,
+.fm-optgroup-label {
+    padding: 6px 8px;
+    border-bottom: 1px solid #eee;
+    cursor: default;
+}
+
+.fm-option:last-child {
+    border-bottom: none;
+}
+
+.fm-search {
+    padding: 0 8px;
+}
+
+.fm-no-results {
+    padding: 6px 8px;
+}
+
+.fm-option {
+    cursor: pointer;
+    word-break: break-all;
+}
+
+.fm-option.disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+
+.fm-option.hl {
+    background-color: #f5f5f5;
+}
+
+.fm-wrap.multiple .fm-option {
+    position: relative;
+    padding-left: 30px;
+}
+
+.fm-wrap.multiple .fm-checkbox {
+    position: absolute;
+    display: block;
+    width: 30px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.fm-wrap.multiple .fm-option .fm-checkbox i {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #aeaeae;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+.fm-wrap.multiple .fm-option.selected .fm-checkbox i {
+    background-color: rgb(255, 77, 77);
+    border-color: transparent;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAGCAYAAAD+Bd/7AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAABMSURBVAiZfc0xDkAAFIPhd2Kr1WRjcAExuIgzGUTIZ/AkImjSofnbNBAfHvzAHjOKNzhiQ42IDFXCDivaaxAJd0xYshT3QqBxqnxeHvhunpu23xnmAAAAAElFTkSuQmCC');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fm-optgroup-label {
+    font-weight: bold;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}

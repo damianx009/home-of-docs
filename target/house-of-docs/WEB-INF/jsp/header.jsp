@@ -41,7 +41,7 @@
 						      <li><a href="#">Raporty</a></li>
 						      <li><a href="#">Słowniki</a></li>
 						  </security:authorize>
-					      <li><a href="#">O stronie</a></li>
+					      <li><a href="${pageContext.request.contextPath}/dictionaries">O stronie</a></li>
 					    </ul>
 					    <security:authorize access="isAuthenticated()">
 					   		<a href="${pageContext.request.contextPath}/search" class="btn btn-danger navbar-btn" role="button">Wyszukiwarka</a>

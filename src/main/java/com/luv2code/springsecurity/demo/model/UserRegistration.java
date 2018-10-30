@@ -1,4 +1,4 @@
-package com.luv2code.springsecurity.demo.entity;
+package com.luv2code.springsecurity.demo.model;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;

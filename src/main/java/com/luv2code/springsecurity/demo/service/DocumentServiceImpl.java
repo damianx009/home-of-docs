@@ -10,6 +10,7 @@ import com.luv2code.springsecurity.demo.dao.InboundDocumentDAO;
 import com.luv2code.springsecurity.demo.dao.OutboundDocumentDAO;
 import com.luv2code.springsecurity.demo.entity.InboundDocument;
 import com.luv2code.springsecurity.demo.entity.OutboundDocument;
+import com.luv2code.springsecurity.demo.model.SearchedDocuments;
 
 @Service
 public class DocumentServiceImpl implements DocumentService {
@@ -29,6 +30,21 @@ public class DocumentServiceImpl implements DocumentService {
 	@Transactional
 	public List<InboundDocument> getAllIntboundDocuments() {
 		return inboundDocumentDAO.getAllIntboundDocuments();
+	}
+
+	@Transactional
+	public List<OutboundDocument> searchedOutboundDocuments(SearchedDocuments seachedDocuments) {
+		return outboundDocumentDAO.getSearchedOutboundDocuments(seachedDocuments);
+	}
+
+	@Transactional
+	public List<String> getSourceSystems() {
+		return outboundDocumentDAO.getSourceSystems();
+	}
+
+	@Transactional
+	public List<String> getDistributionMethods() {
+		return outboundDocumentDAO.getDistributionMethods();
 	}
 	
 }

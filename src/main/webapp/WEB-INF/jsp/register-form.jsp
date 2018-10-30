@@ -14,7 +14,7 @@
 	<!-- Reference Bootstrap files -->
 	<link rel="stylesheet"
 		 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/styles/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	
 	<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -26,14 +26,11 @@
 
 
 
-	<div class="view" style="background-image: url('http://www.lendr.com.ph/wp-content/uploads/2016/07/iStock_86602055_MEDIUM.jpg');
-							 background-repeat: no-repeat;
-							 background-size: cover;
-							 background-position: center center;">
+	<div class="view">
 		<div class="container">
 			<div class="row">
 				<div class="center-block">
-					<div id="registerbox" style="margin-top: 12%; margin-bottom: 12%"
+					<div id="registerbox" style="margin-top: 5%; margin-bottom: 5%"
 						class="mainbox col-md-3col-md-offset-2  col-sm-6 col-sm-offset-3">
 						
 						<div class="panel panel-danger">

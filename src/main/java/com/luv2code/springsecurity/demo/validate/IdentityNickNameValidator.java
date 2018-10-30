@@ -19,7 +19,7 @@ public class IdentityNickNameValidator implements ConstraintValidator<IdentityNi
 			valid = !userService.getUserNickNames().contains(value);
 		}
 		else
-			valid = false;
+			valid = true;
 		return valid;
 	}
 

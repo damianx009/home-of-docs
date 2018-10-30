@@ -17,7 +17,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.luv2code.springsecurity.demo.entity.Authority;
 import com.luv2code.springsecurity.demo.entity.User;
-import com.luv2code.springsecurity.demo.entity.UserRegistration;
+import com.luv2code.springsecurity.demo.model.UserRegistration;
 import com.luv2code.springsecurity.demo.service.UserService;
 
 @Controller
