@@ -7,10 +7,10 @@
 
 <head>
 	
-	<title>Strona Główna</title>
+	<title>Home of Docs - Logowanie</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
+	<link rel="shortcut icon" href="${pageContext.request.contextPath}/img/favicon.ico" type="image/x-icon">
 	<!-- Reference Bootstrap files -->
 	<link rel="stylesheet"
 		 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">

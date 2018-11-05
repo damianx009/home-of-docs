@@ -20,7 +20,7 @@ public class UserRegistration {
 	
 	@NotNull(message="{register.notNull}")
 	@Size(min=8, max=20, message="{register.password.lenght}")
-	@Pattern(regexp="((?=.*[a-z])(?=.*d)(?=.*[@#$%])(?=.*[A-Z]).{8,20})", 
+	@Pattern(regexp="((?=.*[a-z])(?=.*[0-9])(?=.*[@#$%])(?=.*[A-Z]).{8,20})", 
 			 message="{register.password.invalidCharacters}")
 	private String password;
 	

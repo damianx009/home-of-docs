@@ -30,6 +30,8 @@ import com.luv2code.springsecurity.demo.entity.Authority;
 import com.luv2code.springsecurity.demo.entity.InboundDocument;
 import com.luv2code.springsecurity.demo.entity.OutboundDocument;
 import com.luv2code.springsecurity.demo.entity.User;
+import com.luv2code.springsecurity.demo.entity.UsersFilterPerson;
+import com.luv2code.springsecurity.demo.entity.UsersFilterType;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 @SuppressWarnings("deprecation")
@@ -80,7 +82,9 @@ public class AppConfiguration extends WebMvcConfigurerAdapter{
 	      factoryBean.setAnnotatedClasses(User.class,
 	    		  						  Authority.class,
 	    		  						  InboundDocument.class,
-	    		  						  OutboundDocument.class);
+	    		  						  OutboundDocument.class,
+	    		  						  UsersFilterType.class,
+	    		  						  UsersFilterPerson.class);
 	      return factoryBean;
 	   }
 
@@ -132,6 +136,7 @@ public class AppConfiguration extends WebMvcConfigurerAdapter{
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/styles/**").addResourceLocations("/WEB-INF/resources/css/").setCachePeriod(31556926);
         registry.addResourceHandler("/scripts/**").addResourceLocations("/WEB-INF/resources/js/").setCachePeriod(31556926);
+        registry.addResourceHandler("/img/**").addResourceLocations("/WEB-INF/resources/images/").setCachePeriod(31556926);
     }
 	
 	 @SuppressWarnings("unused")

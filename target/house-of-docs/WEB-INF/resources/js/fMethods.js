@@ -8,7 +8,7 @@
         else {
             var settings = $.extend({
                 placeholder: 'Metoda dystrybucji',
-                numDisplayed: 2,
+                numDisplayed: 1,
                 overflowText: 'Wybrano: {n}',
                 searchText: 'Szukaj',
                 noResultsText: 'Nie znaleziono',

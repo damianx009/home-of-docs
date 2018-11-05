@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="com.luv2code.springsecurity.demo.AppTest" time="0.008" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="com.luv2code.springsecurity.demo.AppTest" time="0.003" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="9.0.4+11"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 8.1"/>
-    <property name="classworlds.conf" value="C:\Users\damian\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1274469568561170453.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\damian\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf14409789235034215725.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1250"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk-9.0.4\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\damian\AppData\Roaming\npm;C:\Program Files\Microsoft VS Code\bin;."/>
     <property name="jdk.debug" value="release"/>
@@ -60,5 +60,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.luv2code.springsecurity.demo.AppTest" name="testApp" time="0.008"/>
+  <testcase classname="com.luv2code.springsecurity.demo.AppTest" name="testApp" time="0.003"/>
 </testsuite>

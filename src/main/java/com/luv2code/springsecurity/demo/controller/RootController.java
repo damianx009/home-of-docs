@@ -13,7 +13,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.luv2code.springsecurity.demo.entity.OutboundDocument;
+import com.luv2code.springsecurity.demo.entity.UsersFilterType;
 import com.luv2code.springsecurity.demo.model.SearchedDocuments;
+import com.luv2code.springsecurity.demo.service.ApplicationService;
 import com.luv2code.springsecurity.demo.service.DocumentService;
 
 @Controller
@@ -22,6 +24,9 @@ public class RootController {
 	@Autowired
 	private DocumentService documentService;
 
+	@Autowired
+	private ApplicationService applicationService;
+	
 	@InitBinder
 	public void initBinder(WebDataBinder dataBinder) {
 		StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
@@ -31,8 +36,24 @@ public class RootController {
 //##########################################################################		
 	
 	@GetMapping("/")
-	public String showHome() {
+	public String showHome(Model model) {
+		List<UsersFilterType> listUserFilterTypes = applicationService.getUserFilterTypes();
+		String allFiltersType="";
+		for(int i=0; i< listUserFilterTypes.size();i++) {
+			allFiltersType = allFiltersType + ".filter-" +listUserFilterTypes.get(i).getGroup();
+			if(i < listUserFilterTypes.size() - 1)
+				allFiltersType = allFiltersType +", ";
+		}
+		System.out.println(applicationService.getUsersToFilter());
+		model.addAttribute("allFilterTypes",allFiltersType);	
+		model.addAttribute("filterTypes",listUserFilterTypes);
+		model.addAttribute("filterUsers",applicationService.getUsersToFilter());
 		return "home";
+	}
+	
+	@GetMapping("/about")
+	public String showAboutPage() {
+		return "about";
 	}
 	
 	@GetMapping("/search")
